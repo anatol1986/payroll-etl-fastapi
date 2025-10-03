@@ -1,0 +1,28 @@
+﻿# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# --- Environments & secrets ---
+.venv/
+.env
+*.env
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- IDE/editor ---
+.vscode/
+*.code-workspace
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+logs/
+*.log
