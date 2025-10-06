@@ -48,3 +48,9 @@ def ensure_schema():
                 "CREATE INDEX IF NOT EXISTS fact_payroll_emp_month_idx ON pr.fact_payroll(emp_id, month)"
             )
         )
+        # НОВОЕ: ускоряет джоины по отделам (dim_employee → dim_dept)
+        con.execute(
+            text(
+                "CREATE INDEX IF NOT EXISTS dim_employee_dept_idx ON pr.dim_employee(dept_id)"
+            )
+        )
