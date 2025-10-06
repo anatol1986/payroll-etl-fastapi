@@ -32,6 +32,19 @@ CREATE TABLE IF NOT EXISTS pr.fact_payroll(
 );
 """
 
+
 def ensure_schema():
     with engine.begin() as con:
+        # создаём схему и таблицы
         con.execute(text(DDL))
+        # индексы для ускорения запросов KPI
+        con.execute(
+            text(
+                "CREATE INDEX IF NOT EXISTS fact_payroll_month_idx ON pr.fact_payroll(month)"
+            )
+        )
+        con.execute(
+            text(
+                "CREATE INDEX IF NOT EXISTS fact_payroll_emp_month_idx ON pr.fact_payroll(emp_id, month)"
+            )
+        )
