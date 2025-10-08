@@ -21,12 +21,17 @@ iwr "http://127.0.0.1:8000/kpi/anomalies?month=2025-05&dept=Production" | % Cont
 
 Вставь в README:
 ## Скриншоты
-
+**Swagger — список эндпоинтов**
 ![Swagger overview](docs/screenshots/swagger_overview.png)
-![KPI by dept (2025-05)](docs/screenshots/by_dept_2025-05.png)
-![Delta Apr→May](docs/screenshots/delta_2025-04_to_2025-05.png)
-![Anomalies (2025-05)](docs/screenshots/anomalies_2025-05.png)
 
+**KPI по отделам (2025-05)**
+![KPI by dept (2025-05)](docs/screenshots/by_dept_2025-05.png)
+
+**Дельты Apr→May (gross/bonus/overtime)**
+![Delta Apr→May](docs/screenshots/delta_2025-04_to_2025-05.png)
+
+**Аномалии NET (2025-05, MAD z-score)**
+![Anomalies (2025-05)](docs/screenshots/anomalies_2025-05.png)
 
 
 
