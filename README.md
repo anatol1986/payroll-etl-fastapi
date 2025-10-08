@@ -20,7 +20,8 @@ iwr "http://127.0.0.1:8000/kpi/anomalies?month=2025-05&dept=Production" | % Cont
    - `docs/screenshots/anomalies_2025-05.png`
 
 Вставь в README:
-```md
+## Скриншоты
+
 ![Swagger overview](docs/screenshots/swagger_overview.png)
 ![KPI by dept (2025-05)](docs/screenshots/by_dept_2025-05.png)
 ![Delta Apr→May](docs/screenshots/delta_2025-04_to_2025-05.png)
